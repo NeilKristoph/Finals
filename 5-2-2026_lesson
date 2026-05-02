@@ -1,0 +1,7 @@
+def magbilang(limit, count = 0):
+    print(count)
+    if count  <  limit:
+        count += 1
+        magbilang (limit, count)
+     
+magbilang(5)
