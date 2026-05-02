@@ -1,0 +1,11 @@
+user_limit = int(input("How many is the base star? "))
+def pyr(stars = 0):
+    if stars < user_limit :
+        print(" " * (user_limit - stars) + " *" * (stars + 1))
+        stars += 1
+        pyr(stars)
+    else:
+        return
+pyr()
+print(f"Done pyramid with {user_limit} * base")
+    
